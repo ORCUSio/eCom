@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+
+      <title>Product</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <!--===============================================================================================-->
+      <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/bootstrap/css/bootstrap.min.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="fonts/iconic/css/material-design-iconic-font.min.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="fonts/linearicons-v1.0.0/icon-font.min.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/animate/animate.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/css-hamburgers/hamburgers.min.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/animsition/css/animsition.min.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/select2/select2.min.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/daterangepicker/daterangepicker.css"
+      />
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/MagnificPopup/magnific-popup.css"
+      />
+      <!--===============================================================================================-->
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="vendor/perfect-scrollbar/perfect-scrollbar.css"
+      />
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="css/util.css" />
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+      <!--===============================================================================================-->
+      
+      <link href="https://api.fontshare.com/v2/css?f[]=gambetta@500&display=swap" rel="stylesheet">
+      <link href="https://api.fontshare.com/v2/css?f[]=pilcrow-rounded@600&f[]=nunito@800&display=swap" rel="stylesheet">
+      <style>
+        *, .Gambetta {
+          font-family: 'Gambetta', serif;
+        }
+        *, .PilcrowRounded {
+          font-family: 'Pilcrow Rounded', sans-serif;
+        }
+        .Nunito {
+          font-family: 'Nunito', sans-serif;
+        }
+        .form-check {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .filter-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+
+        .filter-checkbox {
+          margin-right: 10px;
+        }
+
+        .form-check-label {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          padding-left: 0;
+        }
+
+        .count {
+          margin-left: auto;
+          padding-left: 10px;
+        }
+
+      </style>
+      </head>
+    <body class="animsition">
+      <header class="header-v4">
+        <div class="container-menu-desktop">
+          <div class="top-bar">
+            <p>Welcome to our store</p>
+          </div>
+          <div class="wrap-menu-desktop how-shadow1">
+            <nav class="limiter-menu-desktop container">
+              <a href="#" class="logo">
+                <img src="images/icons/logo-01.png" alt="IMG-LOGO" />
+              </a>
+              <div class="menu-desktop">
+                <ul class="main-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li class="active-menu"><a href="product.html">Shop</a></li>
+                  <li><a href="shoping-cart.html">Features</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="wrap-icon-header flex-w flex-r-m">
+                <div
+                  class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search"
+                >
+                  <i class="zmdi zmdi-search"></i>
+                </div>
+                <div
+                  class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
+                  data-notify="2"
+                >
+                  <i class="zmdi zmdi-shopping-cart"></i>
+                </div>
+                <a
+                  href="#"
+                  class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
+                  data-notify="0"
+                >
+                  <i class="zmdi zmdi-favorite-outline"></i>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="wrap-header-mobile">
+          <div class="logo-mobile">
+            <a href="index.html"
+              ><img src="images/icons/logo-01.png" alt="IMG-LOGO"
+            /></a>
+          </div>
+          <div class="wrap-icon-header flex-w flex-r-m m-r-15">
+            <div
+              class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 js-show-modal-search"
+            >
+              <i class="zmdi zmdi-search"></i>
+            </div>
+            <div
+              class="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
+              data-notify="2"
+            >
+              <i class="zmdi zmdi-shopping-cart"></i>
+            </div>
+            <a
+              href="#"
+              class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti"
+              data-notify="0"
+            >
+              <i class="zmdi zmdi-favorite-outline"></i>
+            </a>
+          </div>
+          <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </div>
+        </div>
+        <div class="menu-mobile">
+          <ul class="topbar-mobile">
+            <li>
+              <div class="left-top-bar">
+                Free shipping for standard order over $100
+              </div>
+            </li>
+            <li>
+              <div class="right-top-bar flex-w h-full">
+                <a href="#" class="flex-c-m p-lr-10 trans-04">Help & FAQs</a>
+                <a href="#" class="flex-c-m p-lr-10 trans-04">My Account</a>
+                <a href="#" class="flex-c-m p-lr-10 trans-04">EN</a>
+                <a href="#" class="flex-c-m p-lr-10 trans-04">USD</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="main-menu-m">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Shop</a></li>
+            <li>
+              <a href="shoping-cart.html" class="label1 rs1" data-label1="hot"
+                >Features</a
+              >
+            </li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="bg0 m-t-23 p-b-140">
+        <div class="container">
+          <div class="flex-w flex-sb-m">
+            <div class="flex-w flex-l-m filter-tope-group m-tb-10">
+              <button
+                class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1"
+                data-filter="*"
+              >
+                All Products
+              </button>
+              <button
+                class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
+                data-filter=".women"
+              >
+                Women
+              </button>
+              <button
+                class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
+                data-filter=".men"
+              >
+                Men
+              </button>
+              <button
+                class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
+                data-filter=".bag"
+              >
+                Bag
+              </button>
+              <button
+                class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
+                data-filter=".shoes"
+              >
+                Shoes
+              </button>
+              <button
+                class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
+                data-filter=".watches"
+              >
+                Watches
+              </button>
+            </div>
+            <div class="flex-w flex-c-m m-tb-10">
+              <div
+                class="flex-c-m stext-106 cl6 size-104 bor4 pointer hov-btn3 trans-04 m-r-8 m-tb-4 js-show-filter"
+              >
+                <i
+                  class="icon-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-filter-list"
+                ></i>
+                <i
+                  class="icon-close-filter cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"
+                ></i>
+                Filter
+              </div>
+              <div
+                class="flex-c-m stext-106 cl6 size-105 bor4 pointer hov-btn3 trans-04 m-tb-4 js-show-search"
+              >
+                <i
+                  class="icon-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-search"
+                ></i>
+                <i
+                  class="icon-close-search cl2 m-r-6 fs-15 trans-04 zmdi zmdi-close dis-none"
+                ></i>
+                Search
+              </div>
+            </div>
+            <div class="dis-none panel-search w-full p-t-10 p-b-15">
+              <div class="bor8 dis-flex p-l-15">
+                <button class="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+                  <i class="zmdi zmdi-search"></i>
+                </button>
+                <input
+                  class="mtext-107 cl2 size-114 plh2 p-r-15"
+                  type="text"
+                  name="search-product"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="pagination">
+            <div style="position: relative; left: -20px;"><span></span> Filters</div>
+            <div>
+              <p>Prev</p>
+              <div>
+                <p><span>1</span> of <span>40</span></p>
+              </div>
+              <p>Next</p>
+            </div>
+          </div>
+          <div id="product-container" class="flex-container">
+            <div id="filter-section" class="filter-section">
+              <div
+                class="dis-none panel-filter w-full p-t-10"
+                style="display: block"
+              >
+                <!-- Filters will be dynamically inserted here -->
+              </div>
+            </div>
+            <div id="product-list" class="row isotope-grid">
+            <div style="position: absolute; top:-20px; left: 20px;"><span>2885</span> products</div>
+
+              <!-- Products will be dynamically inserted here -->
+            </div>
+          </div>
+
+          <div class="flex-c-m flex-w w-full p-t-45">
+            <a
+              href="#"
+              class="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04"
+              id="load-more"
+              >Load More</a
+            >
+          </div>
+        </div>
+      </div>
+      <footer class="bg3 p-t-75 p-b-32">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 p-b-50">
+              <h4 class="stext-301 cl0 p-b-30">Categories</h4>
+              <ul>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04">Women</a>
+                </li>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04">Men</a>
+                </li>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04">Shoes</a>
+                </li>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04">Watches</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3 p-b-50">
+              <h4 class="stext-301 cl0 p-b-30">Help</h4>
+              <ul>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04"
+                    >Track Order</a
+                  >
+                </li>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04">Returns</a>
+                </li>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04"
+                    >Shipping</a
+                  >
+                </li>
+                <li class="p-b-10">
+                  <a href="#" class="stext-107 cl7 hov-cl1 trans-04">FAQs</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-lg-3 p-b-50">
+              <h4 class="stext-301 cl0 p-b-30">GET IN TOUCH</h4>
+              <p class="stext-107 cl7 size-201">
+                Any questions? Let us know in store at 8th floor, 379 Hudson St,
+                New York, NY 10018 or call us on (+1) 96 716 6879
+              </p>
+              <div class="p-t-27">
+                <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+                  ><i class="fa fa-facebook"></i
+                ></a>
+                <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="#" class="fs-18 cl7 hov-cl1 trans-04 m-r-16"
+                  ><i class="fa fa-pinterest-p"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 p-b-50">
+              <h4 class="stext-301 cl0 p-b-30">Newsletter</h4>
+              <form>
+                <div class="wrap-input1 w-full p-b-4">
+                  <input
+                    class="input1 bg-none plh1 stext-107 cl7"
+                    type="text"
+                    name="email"
+                    placeholder="email@example.com"
+                  />
+                  <div class="focus-input1 trans-04"></div>
+                </div>
+                <div class="p-t-18">
+                  <button
+                    class="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="p-t-40">
+            <div class="flex-c-m flex-w p-b-18">
+              <a href="#" class="m-all-1"
+                ><img src="images/icons/icon-pay-01.png" alt="ICON-PAY"
+              /></a>
+              <a href="#" class="m-all-1"
+                ><img src="images/icons/icon-pay-02.png" alt="ICON-PAY"
+              /></a>
+              <a href="#" class="m-all-1"
+                ><img src="images/icons/icon-pay-03.png" alt="ICON-PAY"
+              /></a>
+              <a href="#" class="m-all-1"
+                ><img src="images/icons/icon-pay-04.png" alt="ICON-PAY"
+              /></a>
+              <a href="#" class="m-all-1"
+                ><img src="images/icons/icon-pay-05.png" alt="ICON-PAY"
+              /></a>
+            </div>
+            <p class="stext-107 cl6 txt-center">
+              &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved |Made with
+              <i class="fa fa-heart-o" aria-hidden="true"></i> by
+              <a href="https://colorlib.com" target="_blank">Colorlib</a> &amp;
+              distributed by
+              <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div class="btn-back-to-top" id="myBtn">
+        <span class="symbol-btn-back-to-top">
+          <i class="zmdi zmdi-chevron-up"></i>
+        </span>
+      </div>
+
+      <script>
+      
+      </script>
+
+<script>
+  const filters = [
+  {
+    title: "Sort by",
+    options: [
+      { name: "Most Popular", count: 120 },
+      { name: "New In", count: 75 },
+      { name: "Discount £ GBP (High to Low)", count: 34 },
+      { name: "Discount % (High To Low)", count: 56 },
+      { name: "Price (Low To High)", count: 90 },
+      { name: "Price (High To Low)", count: 95 },
+      { name: "Brand (A To Z)", count: 102 },
+      { name: "Brand (Z To A)", count: 87 }
+    ]
+  },
+  {
+    title: "Gender",
+    options: [
+      { name: "Mens", count: 234 },
+      { name: "Unisex Adults", count: 123 }
+    ]
+  },
+  {
+    title: "Size",
+    options: [
+      { name: "ONE SIZE", count: 78 },
+      { name: "L", count: 56 },
+      { name: "M", count: 45 },
+      { name: "XL", count: 34 },
+      { name: "2XL", count: 23 },
+      { name: "3XL", count: 12 },
+      { name: "Over 100ml", count: 9 },
+      { name: "80", count: 4 }
+    ]
+  },
+  {
+    title: "Designers",
+    options: [
+      { name: "Boss", count: 50 },
+      { name: "Versace", count: 40 },
+      { name: "Hugo", count: 30 },
+      { name: "Calvin Klein", count: 25 },
+      { name: "Ted Baker", count: 20 },
+      { name: "G Shock", count: 18 },
+      { name: "Tommy Hilfiger", count: 15 },
+      { name: "Polo Ralph Lauren", count: 12 },
+      { name: "Eastpak", count: 10 },
+      { name: "Vivienne Westwood", count: 8 },
+      { name: "Emporio Armani", count: 6 },
+      { name: "Stan Editions", count: 5 },
+      { name: "Buddha To Buddha", count: 4 },
+      { name: "DSquared2", count: 3 },
+      { name: "Barbour", count: 2 },
+      { name: "MCM", count: 1 },
+      { name: "Paul Smith", count: 1 },
+      { name: "Lacoste", count: 1 },
+      { name: "Alexander McQueen", count: 1 },
+      { name: "MCQ", count: 1 },
+      { name: "Off White", count: 1 },
+      { name: "Oris", count: 1 },
+      { name: "Philipp Plein", count: 1 },
+      { name: "Barr-co", count: 1 },
+      { name: "Michael Kors", count: 1 },
+      { name: "Tateossian", count: 1 },
+      { name: "The Cottage Greenhouse", count: 1 },
+      { name: "Balenciaga", count: 1 },
+      { name: "Napapijri", count: 1 },
+      { name: "Palm Angels", count: 1 },
+      { name: "Rains", count: 1 },
+      { name: "Ray-Ban", count: 1 },
+      { name: "Ugg", count: 1 },
+      { name: "Versace Jeans Couture", count: 1 },
+      { name: "CP Company", count: 1 },
+      { name: "Common Lines", count: 1 },
+      { name: "PS Paul Smith", count: 1 },
+      { name: "Burberry", count: 1 },
+      { name: "Hatton Labs", count: 1 },
+      { name: "Montblanc", count: 1 },
+      { name: "Mugler", count: 1 },
+      { name: "Porter Yoshida", count: 1 },
+      { name: "The North Face", count: 1 },
+      { name: "True Religion", count: 1 },
+      { name: "Barbour International", count: 1 },
+      { name: "Coach", count: 1 },
+      { name: "Diesel", count: 1 },
+      { name: "Library of Flowers", count: 1 },
+      { name: "Lladro", count: 1 },
+      { name: "Maserati", count: 1 },
+      { name: "Ambush", count: 1 },
+      { name: "Baume and Mercier", count: 1 },
+      { name: "Bulgari", count: 1 },
+      { name: "Cote et Ciel", count: 1 },
+      { name: "Daniel Wellington", count: 1 },
+      { name: "Dries Van Noten", count: 1 },
+      { name: "Guess", count: 1 },
+      { name: "Heron Preston", count: 1 },
+      { name: "Jacquemus", count: 1 },
+      { name: "Replay", count: 1 },
+      { name: "Visvim", count: 1 },
+      { name: "adidas", count: 1 },
+      { name: "1017 ALYX 9SM", count: 1 },
+      { name: "A-COLD-WALL", count: 1 },
+      { name: "Aery", count: 1 },
+      { name: "CP Company Metropolis", count: 1 },
+      { name: "Darphin", count: 1 },
+      { name: "Dolce and Gabbana", count: 1 },
+      { name: "Ferragamo", count: 1 },
+      { name: "Giorgio Armani", count: 1 },
+      { name: "Jil Sander", count: 1 },
+      { name: "Kiehls", count: 1 },
+      { name: "Marcelo Burlon", count: 1 },
+      { name: "Moschino", count: 1 },
+      { name: "Oakley", count: 1 },
+      { name: "Olivia Palermo", count: 1 },
+      { name: "Paul And Shark", count: 1 },
+      { name: "Rabanne", count: 1 },
+      { name: "Ralph Lauren", count: 1 },
+      { name: "Reebok", count: 1 },
+      { name: "Rhude", count: 1 },
+      { name: "Rick Owens", count: 1 },
+      { name: "Roberto Cavalli Home", count: 1 },
+      { name: "Sisley", count: 1 },
+      { name: "U-Boat", count: 1 },
+      { name: "Versace Home", count: 1 },
+      { name: "Zegna", count: 1 },
+      { name: "adidas Originals", count: 1 }
+    ]
+  },
+  {
+    title: "Product Type",
+    options: [
+      { name: "Watches", count: 75 },
+      { name: "Bags", count: 65 },
+      { name: "Belts", count: 50 },
+      { name: "Purses And Wallets", count: 40 },
+      { name: "Sunglasses", count: 30 },
+      { name: "Bracelets", count: 25 },
+      { name: "Perfumes", count: 20 },
+      { name: "Slippers", count: 15 },
+      { name: "Home Fragrance", count: 10 },
+      { name: "Hand Care", count: 9 },
+      { name: "Bath and Shower", count: 8 },
+      { name: "Body Moisturisers", count: 7 },
+      { name: "Fragrance Gift Sets", count: 6 },
+      { name: "Exfoliators and Masks", count: 5 }
+    ]
+  },
+  {
+    title: "Colour",
+    options: [
+      { name: "BLACK", count: 60 },
+      { name: "GREY", count: 55 },
+      { name: "BROWN", count: 50 },
+      { name: "NAVY", count: 45 },
+      { name: "SILVER", count: 40 },
+      { name: "BLUE", count: 35 },
+      { name: "GOLD", count: 30 },
+      { name: "RED", count: 25 },
+      { name: "GREEN", count: 20 },
+      { name: "WHITE", count: 15 },
+      { name: "PINK", count: 10 },
+      { name: "MULTI", count: 5 }
+    ]
+  }
+];
+
+function createFilterItem(title, options) {
+    const titleId = `collapse${title.replace(/\s/g, "")}`;
+    
+    const container = document.createElement("div");
+    container.classList.add("list-group-item");
+    container.style.borderRadius = "0px";
+    container.innerHTML = `
+        <div class="list-group-dropdownIcon" href="#${titleId}" data-toggle="collapse" aria-expanded="false" aria-controls="${titleId}">
+            <a class="list-group-item-title" href="#${titleId}" data-toggle="collapse" aria-expanded="false" aria-controls="${titleId}">
+                ${title}
+            </a>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="collapse" id="${titleId}">
+            <div class="search-container" style="padding: 10px 0; margin-bottom: 20px; border-bottom: 1px solid grey;">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" width="122.879px" height="119.799px" viewBox="0 0 122.879 119.799"
+                    enable-background="new 0 0 122.879 119.799" xml:space="preserve"
+                    style="height: 15px; position: absolute; width: min-content; margin-top: 4px;">
+                    <g>
+                        <path d="M49.988,0h0.016v0.007C63.803,0.011,76.298,5.608,85.34,14.652c9.027,9.031,14.619,21.515,14.628,35.303h0.007v0.033v0.04h-0.007c-0.005,5.557-0.917,10.905-2.594,15.892c-0.281,0.837-0.575,1.641-0.877,2.409v0.007c-1.446,3.66-3.315,7.12-5.547,10.307l29.082,26.139l0.018,0.016l0.157,0.146l0.011,0.011c1.642,1.563,2.536,3.656,2.649,5.78c0.11,2.1-0.543,4.248-1.979,5.971l-0.011,0.016l-0.175,0.203l-0.035,0.035l-0.146,0.16l-0.016,0.021c-1.565,1.642-3.654,2.534-5.78,2.646c-2.097,0.111-4.247-0.54-5.971-1.978l-0.015-0.011l-0.204-0.175l-0.029-0.024L78.761,90.865c-0.88,0.62-1.778,1.209-2.687,1.765c-1.233,0.755-2.51,1.466-3.813,2.115c-6.699,3.342-14.269,5.222-22.272,5.222v0.007h-0.016v-0.007c-13.799-0.004-26.296-5.601-35.338-14.645C5.605,76.291,0.016,63.805,0.007,50.021H0v-0.033v-0.016h0.007c0.004-13.799,5.601-26.296,14.645-35.338C23.683,5.608,36.167,0.016,49.955,0.007V0H49.988L49.988,0z M50.004,11.21v0.007h-0.016h-0.033V11.21c-10.686,0.007-20.372,4.35-27.384,11.359C15.56,29.578,11.213,39.274,11.21,49.973h0.007v0.016v0.033H11.21c0.007,10.686,4.347,20.367,11.359,27.381c7.009,7.012,16.705,11.359,27.403,11.361v-0.007h0.016h0.033v0.007c10.686-0.007,20.368-4.348,27.382-11.359c7.011-7.009,11.358-16.702,11.36-27.4h-0.006v-0.016v-0.033h0.006c-0.006-10.686-4.35-20.372-11.358-27.384C70.396,15.56,60.703,11.213,50.004,11.21L50.004,11.21z"></path>
+                    </g>
+                </svg>
+                <input type="text" class="filter-search-input" placeholder="Search ${title}" style="padding-left: 25px;">
+            </div>
+            <div class="options-container"></div>
+        </div>
+    `;
+
+    const collapseDiv = container.querySelector('.collapse');
+    const searchContainer = container.querySelector('.search-container');
+    const searchInput = container.querySelector('.filter-search-input');
+    const optionsContainer = container.querySelector('.options-container');
+    const dropdownIcon = container.querySelector('.list-group-dropdownIcon');
+    const icon = container.querySelector("i");
+
+    const addOptions = (opts) => {
+        optionsContainer.innerHTML = opts.map(option => `
+            <div class="form-check">
+                <div class="filter-item">
+                    <input type="checkbox" class="filter-checkbox" value="${option.name}">
+                    <label class="form-check-label">${option.name} <span class="count">(${option.count})</span></label>
+                </div>
+            </div>
+        `).join('');
+    };
+
+    const initialOptions = options.slice(0, 10);
+    const remainingOptions = options.slice(10);
+
+    addOptions(initialOptions);
+
+    if (remainingOptions.length > 0) {
+        const showMoreButton = document.createElement("button");
+        showMoreButton.innerText = `Show ${remainingOptions.length} more`;
+        showMoreButton.classList.add("btn", "btn-link");
+        showMoreButton.onclick = () => {
+            addOptions(options);
+            showMoreButton.style.display = "none";
+        };
+        optionsContainer.appendChild(showMoreButton);
+    }
+
+    searchInput.onfocus = () => {
+        searchContainer.style.borderBottom = "1px solid black";
+    };
+    searchInput.onblur = () => {
+        searchContainer.style.borderBottom = "1px solid grey";
+    };
+
+    searchInput.oninput = () => {
+        const filterText = searchInput.value.toLowerCase();
+        const filteredOptions = options.filter(option =>
+            option.name.toLowerCase().includes(filterText)
+        );
+        addOptions(filteredOptions);
+    };
+
+    dropdownIcon.addEventListener("click", () => {
+        icon.classList.toggle("fa-caret-down");
+        icon.classList.toggle("fa-caret-up");
+    });
+
+    return container;
+}
+
+const filterContainer = document.querySelector(".panel-filter");
+
+filters.forEach(filter => {
+    const filterItem = createFilterItem(filter.title, filter.options);
+    filterContainer.appendChild(filterItem);
+});
+
+</script>
+
+
+      <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+      <script src="vendor/animsition/js/animsition.min.js"></script>
+      <script src="vendor/bootstrap/js/popper.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script src="vendor/select2/select2.min.js"></script>
+      <script>
+        $(".js-select2").each(function () {
+          $(this).select2({
+            minimumResultsForSearch: 20,
+            dropdownParent: $(this).next(".dropDownSelect2"),
+          });
+        });
+      </script>
+      <script src="vendor/daterangepicker/moment.min.js"></script>
+      <script src="vendor/daterangepicker/daterangepicker.js"></script>
+      <script src="vendor/slick/slick.min.js"></script>
+      <script src="js/slick-custom.js"></script>
+      <script src="vendor/parallax100/parallax100.js"></script>
+      <script>
+        $(".parallax100").parallax100();
+      </script>
+      <script src="vendor/MagnificPopup/jquery.magnific-popup.min.js"></script>
+      <script>
+        $(".gallery-lb").each(function () {
+          $(this).magnificPopup({
+            delegate: "a",
+            type: "image",
+            gallery: {
+              enabled: true,
+            },
+            mainClass: "mfp-fade",
+          });
+        });
+      </script>
+      <script src="vendor/isotope/isotope.pkgd.min.js"></script>
+      <script src="vendor/sweetalert/sweetalert.min.js"></script>
+      <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+      <script>
+        $(".js-pscroll").each(function () {
+          $(this).css("position", "relative");
+          $(this).css("overflow", "hidden");
+          var ps = new PerfectScrollbar(this, {
+            wheelSpeed: 1,
+            scrollingThreshold: 1000,
+            wheelPropagation: false,
+          });
+          $(window).on("resize", function () {
+            ps.update();
+          });
+        });
+      </script>
+      <script src="js/main.js"></script>
+      <script src="js/prds.js"></script>
+    </body>
+  </html>
+</html>
